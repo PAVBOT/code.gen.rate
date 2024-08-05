@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited - Special Market</title>
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+    <header>
+        <h1>Shadow Fusion</h1>
+        <p>Welcome</p>
+    </header>
+    
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This is a website where I will give you new stories and games for free! Just subscribe to SHADOW FUSION.</p>
+        </section>
+
+        <section id="credits">
+            <h2>Credits</h2>
+            <p>Subscribing gives you one credit.</p>
+            <p id="credits-display">You have 0 credits.</p>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe to Shadow Fusion</h2>
+            <p>Subscribe to my YouTube channel to receive updates!</p>
+            <a href="https://www.youtube.com/@PAVERGAMES" target="_blank" rel="noopener noreferrer">
+                <button>Subscribe on YouTube</button>
+            </a>
+        </section>
+
+        <section id="redeem-code">
+            <h2>Redeem a Code</h2>
+            <form id="redeem-form">
+                <input type="text" id="redeemCode" placeholder="Enter code to redeem" required>
+                <button type="submit">Redeem Code</button>
+            </form>
+            <div id="book-selection" style="display: none;">
+                <h3>Select a Book</h3>
+                <select id="book-options">
+                    <option value="sri-and-sap">Sri and Sap</option>
+                    <option value="the-doctor-1-4">The Doctor 1-4</option>
+                    <option value="the-interkiller-pt1-2">The Interkiller Pt1-2</option>
+                    <option value="tunda-pt1-5">Tunda Pt1-5</option>
+                </select>
+                <button id="get-book-btn">Get Selected Book</button>
+            </div>
+            <p id="redeem-message"></p>
+        </section>
+
+        <a href="index.html">Go Back</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shadow Fusion. All rights reserved.</p>
+    </footer>
+
+    <!-- Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js"></script>
+    <script src="story.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input-field{
+    position: left;
+}
+input-field input{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: solid 2px #fff;
+    background: transparent;
+    outline: none;
+    color: rgb(255, 38, 0);
+}
+input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50px);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+input:focus{
+    border: 2px solid #0084ff
+}
+
+input:focus ~ label
+input:valid~label{
+    top: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    background: rgb(0, 0, 0);
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1e90ff;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+}
